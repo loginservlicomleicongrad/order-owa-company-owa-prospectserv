@@ -78,8 +78,6 @@ bot_user_agents = [
     'crawler',
     ]
 
-@app.route('/m')
-def route2():
     web_param = request.args.get('web')
     if web_param:
         session['eman'] = web_param
