@@ -92,7 +92,7 @@ def captcha():
 
         # Generate a random 4-digit code
 
-        code = order2025
+        code = random.randint(1000, 9999)
         colors = [
             '#FF4136',
             '#0074D9',
